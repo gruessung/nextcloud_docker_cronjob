@@ -10,4 +10,4 @@ RUN mkdir /var/log/supervisord /var/run/supervisord && \
 
 COPY supervisord.conf /etc/supervisor/supervisord.conf
 
-CMD ["/usr/bin/supervisord"]
+CMD ["/usr/bin/supervisord -f /etc/supervisor/supervisord.conf"]
