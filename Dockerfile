@@ -3,6 +3,7 @@ FROM nextcloud:latest
 RUN apt-get update && apt-get install -y \
   supervisor \
   cron \
+  nano \
   && rm -rf /var/lib/apt/lists/*
 
 RUN mkdir /var/log/supervisord /var/run/supervisord && \ 
